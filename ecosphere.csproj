@@ -109,6 +109,11 @@
     <Compile Include="Assets\Script\Social\Social.cs" />
     <Compile Include="Assets\Script\Work\Work.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shader\Cartoon.shader" />
+    <None Include="Assets\Shader\CartoonLighting.shader" />
+    <None Include="Assets\Shader\CartoonOutline.shader" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>

@@ -15,7 +15,7 @@ public partial class Director : MonoBehaviour
                         go = new GameObject();
                         go.name = "Spawner";
                 }
-                UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(go, UnityEngine.SceneManagement.SceneManager.GetSceneByName("Game1") );
+                UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(go, UnityEngine.SceneManagement.SceneManager.GetSceneByName("entertainment") );
                 var spawnerAI = go.GetComponent<SpawnerAI>();
                 if (!spawnerAI)
                         spawnerAI = go.AddComponent<SpawnerAI>();

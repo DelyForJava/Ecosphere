@@ -43,11 +43,11 @@ public class Client : MonoBehaviour
         IEnumerator LoadGame()
         {
                 yield return _asyncOperation;
-                _asyncOperation = SceneManager.LoadSceneAsync("game1", LoadSceneMode.Additive);
+                _asyncOperation = SceneManager.LoadSceneAsync("entertainment", LoadSceneMode.Additive);
                 while (!_asyncOperation.isDone)
                         yield return _asyncOperation;
 
-                var game1 = SceneManager.GetSceneByName("game1");
+                var game1 = SceneManager.GetSceneByName("entertainment");
                 SceneManager.SetActiveScene(game1);
 
                 var firstScene = SceneManager.GetSceneByName("client");
