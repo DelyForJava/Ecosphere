@@ -29,7 +29,7 @@ public class Client : MonoBehaviour
                 if (!net)
                         net = go.AddComponent<Net>();
 
-                StartCoroutine( LoadGame() );
+                //StartCoroutine( LoadGame() );
 
         }
 
