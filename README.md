@@ -1,2 +1,3 @@
-# Ecosphere
-This is just a trying of some idea.
+# ecosphere
+
+Capture some idea before it lost.
