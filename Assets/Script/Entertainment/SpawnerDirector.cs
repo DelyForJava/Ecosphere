@@ -26,24 +26,33 @@ public partial class Director
                 }
         }
 
-        private bool _isHeroMoving;
         public bool IsHeroMoving
         {
-                get
-                {
-                        if (JoystickPosition != Vector3.zero)
-                                _isHeroMoving = true;
-                        else
-                                _isHeroMoving = false;
-
-                        return _isHeroMoving;
-                }
-                set
-                {
-                        _isHeroMoving = value;
-                }
-
+                get;set;
         }
+
+        public bool IsHeroAttacking
+        {
+                get;set;
+        }
+        //private bool _isHeroMoving;
+        //public bool IsHeroMoving
+        //{
+        //        get
+        //        {
+        //                if (JoystickPosition != Vector3.zero)
+        //                        _isHeroMoving = true;
+        //                else
+        //                        _isHeroMoving = false;
+
+        //                return _isHeroMoving;
+        //        }
+        //        set
+        //        {
+        //                _isHeroMoving = value;
+        //        }
+
+        //}
 
         public Vector3 HeroPosition
         {

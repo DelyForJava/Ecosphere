@@ -30,12 +30,13 @@ public partial class Director : MonoBehaviour
         void Update()
         {
                 //updateSpawner();
-                updateUI();
+                //updateUI();
         }
 
         private void LateUpdate()
         {
                 Camera.position = HeroPosition - new Vector3(0,-1,3);
+                //Camera.LookAt(HeroPosition);
         }
         /* ------------------------------------------------------------------------------------------------------------ */
 

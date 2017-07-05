@@ -50,24 +50,47 @@ public  class BotAI : MonoBehaviour
                         _orientation.Target =  t;
 
 
+                        var a = Director.IsHeroAttacking;
+                        if (b==true)
+                                Director.HeroCase = 1000;
+                        else
+                        {
+                                Director.HeroCase = 0;
+                                if(a)
+                                {
+                                        int ran = Random.Range(1, 4);
+                                        Director.HeroCase = ran;
+                                        var casi = _animator.GetCurrentAnimatorStateInfo(0);
+                                        if(_clock.ElapsedTime > casi.length)
+                                        {
+                                                Director.IsHeroAttacking = false;
+                                        }
+                                }
+                                else
+                                        _clock.ElapsedTime = 0;
+
+
+                        }
                         _animator.SetInteger("case", Director.HeroCase);
 
-                        if (Director.AttackQueue.Count <= 0)
-                        {
-                                _clock.ElapsedTime = 0;
-                                return;
-                        }
+                        //if (Director.AttackQueue.Count <= 0)
+                        //{
+                        //        _clock.ElapsedTime = 0;
+                        //        return;
+                        //}
 
-                        var casi = _animator.GetCurrentAnimatorStateInfo(0);
-                        //var casi = _animator.GetCurrentAnimatorStateInfo(_animator.GetLayerIndex("Base Layer"));
-                        if (_clock.ElapsedTime > casi.length)
-                        {
-                                Debug.Log("current state consume" + casi.length);
-                                _clock.ElapsedTime -= casi.length;
-                                Director.PopQueue = true;
-                                Director.HeroCase = 0;
-                                _animator.SetInteger("case", 0);
-                        }
+                        //var casi = _animator.GetCurrentAnimatorStateInfo(0);
+                        ////var casi = _animator.GetCurrentAnimatorStateInfo(_animator.GetLayerIndex("Base Layer"));
+                        //if (_clock.ElapsedTime > casi.length)
+                        //{
+                        //        Debug.Log("current state consume" + casi.length);
+                        //        _clock.ElapsedTime -= casi.length;
+                        //        Director.PopQueue = true;
+                        //        Director.HeroCase = 0;
+                        //        _animator.SetInteger("case", 0);
+                        //}
+
+
                 }
                 else
                 {
