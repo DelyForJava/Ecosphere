@@ -1,3 +1,3 @@
 # Ecosphere
-This is just a trying of some idea.
+Capture some idea before flow away.
 calendar calculator news 
