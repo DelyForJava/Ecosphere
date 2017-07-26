@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c2751078cc281464890056c064a62a94
+timeCreated: 1499511693
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _glow_01: {fileID: 2800000, guid: 4a7ecf485f049427fb42936230bac779, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

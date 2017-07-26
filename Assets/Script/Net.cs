@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Net : MonoBehaviour
 {
-        void Start()
-        {
+    void Start()
+    {
 
-        }
+    }
 
-        void Update()
-        {
+    void Update()
+    {
 
-        }
+    }
 
 }
